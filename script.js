@@ -1,5 +1,6 @@
 const button = document.getElementById('button');
 const audioElement = document.getElementById('audio');
+const apiKey = config.API_key;
 
 // VoiceRSS Javascript SDK
 
@@ -12,7 +13,7 @@ function toggleButton() {
 // Passing our Joke to our VoiceRSSApi
 function tellme(joke)  {
     VoiceRSS.speech({
-        key: '<API_Goes_Here>',
+        key: apiKey,
         src: joke,
         hl: 'en-us',
         v: 'Linda',
